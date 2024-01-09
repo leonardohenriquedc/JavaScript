@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: lightcoral;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Modulo C estudando DOM</h1>
+    <p>Estudando  modulo C que fala sobre DOM </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam natus doloribus recusandae mollitia quos repellendus, labore vel culpa eveniet aliquid! Autem explicabo vel voluptas ea ducimus incidunt nostrum quasi amet.
+
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, delectus enim? Repellendus vitae beatae, asperiores odio non, alias iste voluptas architecto tenetur, corrupti repellat quo aspernatur cumque autem minima officiis!
+    </p>
+    <div class="mm">. </div>
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write ("Esta escrito assim : " + p1.innerText)
+        p1.style.color = 'lightgray'
+        corpo.style.background = 'lightred'
+        var b = window.document.getElementsByClassName('mm')[0]
+        b.style.background = 'green'
+        b.innerText = 'Estou usando dom'
+    </script>
+</body>
+</html>
