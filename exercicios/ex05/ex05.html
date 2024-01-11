@@ -22,16 +22,15 @@
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, delectus enim? Repellendus vitae beatae, asperiores odio non, alias iste voluptas architecto tenetur, corrupti repellat quo aspernatur cumque autem minima officiis!
     </p>
-    <div class="mm">. </div>
+    <div class="mm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde ipsam nemo tempore reprehenderit eos voluptas perspiciatis quibusdam laudantium, temporibus obcaecati corporis soluta odit repellendus dolor molestiae id rem autem reiciendis? </div>
     <script>
         var corpo = document.body
         var p1 = document.getElementsByTagName('p')[0]
         document.write ("Esta escrito assim : " + p1.innerText)
         p1.style.color = 'lightgray'
         corpo.style.background = 'lightred'
-        var b = window.document.getElementsByClassName('mm')[0]
-        b.style.background = 'green'
-        b.innerText = 'Estou usando dom'
+        var b = window.document.querySelector('div.mm')
+        b.style.color ='Blue'
     </script>
 </body>
 </html>
