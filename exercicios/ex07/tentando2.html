@@ -4,22 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        #op {
+            width: 30px;
+        }
+    </style>
     
 </head>
 <body>
-    <h1>Soma</h1>
+    <h1>Calculadora</h1>
     <input type="number" name="valor1" id="v1">
+    <input type="text" name="op" id="op">
     <input type="number" name="valor2" id="v2">
-    <input type="button" value="Resultado" onclick="clk()">
+    <input type="button" value="Resultado" id="botao">
     <div id="resf"></div>
     <script>
         var valor1 = document.querySelector('#v1')
         var valor2 = document.querySelector('#v2')
-        var res = document.querySelector('#resf')
-        function clk(){
-            var rs = Number(valor1.value) + Number(valor2.value)
-            res.innerText = 'O valor e ' + rs
+        var operacao = document.querySelector('#op')
+        var escuta = document.querySelector('#botao')
+        
+        function evento () { 
+            var resf = document.getElementById('resf')
+            resf.innerHTML = Number(valor1.value) + Number(valor2.value)
         }
+
+        escuta.addEventListener('click', evento)
+
     </script>
 </body>
 </html>
