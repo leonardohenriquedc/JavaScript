@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Soma</h1>
+    <input type="number" name="valor1" id="v1">
+    <input type="number" name="valor2" id="v2">
+    <input type="button" value="Resultado" onclick="clk()">
+    <div id="resf"></div>
+    <script>
+        var valor1 = document.querySelector('#v1')
+        var valor2 = document.querySelector('#v2')
+        var res = document.querySelector('#resf')
+        function clk(){
+            var rs = Number(valor1.value) + Number(valor2.value)
+            res.innerText = 'O valor e ' + rs
+        }
+    </script>
+</body>
+</html>

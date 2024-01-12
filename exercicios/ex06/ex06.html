@@ -26,23 +26,33 @@
     
 </head>
 <body>
-    <div id="area" >
+    <div id="area">
         <p id="pp">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quos corrupti recusandae, excepturi saepe blanditiis inventore deleniti commodi perferendis nemo, consequuntur numquam laborum, pariatur atque rerum sequi qui esse voluptates?
         </p>
     </div>
     <script>
         var a = document.querySelector('#pp')
+
+        let entrando = ()=> {
+            a.innerText = 'Entrou'
+        }
+
         let msg = ()=> {
             a.style.background = 'blue'
+            a.innerText = 'Tentando ser melhor'
         }
 
         let saindo = ()=> {
             a.innerText = 'Saiiiindooo '
         }
 
+        
+        
         let c = addEventListener('click', msg)
+        let k = addEventListener('mouseover', entrando)
         let f = addEventListener('mouseout', saindo)
+        
     </script>
 </body>
 </html>
