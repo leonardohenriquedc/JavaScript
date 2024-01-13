@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    width: 70vw;
+    height: 70vw;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    margin:auto;
+    box-shadow: 2px 2px 7px #000000ce;
+}
+div {
+    text-align: center;
+}
+
+#msg {
+    padding: 20px;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+#img {
+    background-color: lightblue;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+    border: 0.7px solid black;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+}
