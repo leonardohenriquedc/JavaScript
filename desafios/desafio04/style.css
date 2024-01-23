@@ -21,11 +21,12 @@ main{
     width: 40px;
 }
 
-#res {
-    width: 100px;
-    height: 200px;
-    border: 1px solid black;
-}
+/* #mais:hover, #menos:hover, #mult:hover, #div:hover {
+    background-color: #0000ff62;
+    font-size: large;
+    transition: 0.5s;
+} */
+
 
 footer {
     text-align: center;
