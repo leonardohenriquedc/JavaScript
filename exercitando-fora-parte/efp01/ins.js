@@ -4,6 +4,7 @@ var login = document.querySelector('#eml')
 var senha = document.querySelector('#senha')
 var entrar = document.querySelector('#entrar')
 var main = document.querySelector('#main')
+
 var dados = []
 
 function logado(){
@@ -14,8 +15,11 @@ function logado(){
         dados.push(login.value)
         dados.push(senha.value)
         console.log(dados)
+        main.innerHTML = ''
         main.innerHTML += '<p> Você está logado!</p>'
     }
 }
+
+
 
 entrar.addEventListener('click', logado)
