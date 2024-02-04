@@ -3,7 +3,7 @@ function mudar(){
     var img = document.querySelector('#img')
     var body = document.body
     var hora = new Date()
-    var horaatual =  6//hora.getHours()
+    var horaatual =  hora.getHours()
     msg.innerHTML = `Agora são exatamente ${horaatual} horas`
     if ( horaatual >= 5 && horaatual <=12){
         img.src = 'imagens/foto-manha.jpg'
